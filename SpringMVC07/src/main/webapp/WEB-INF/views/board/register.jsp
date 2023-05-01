@@ -36,7 +36,7 @@
 
         <div class="form-group" style="display: none">
           <lable>작성자</lable>
-          <input type="text" readonly="readonly" name="writer" class="form-control" value="${mvo.memName}">
+          <input style="display: none" type="text" readonly="readonly" name="writer" class="form-control" value="${mvo.memName}">
         </div>
         <button type="submit" class="btn btn-default btn-sm">등록</button>
         <button type="reset" class="btn btn-default btn-sm">취소</button>

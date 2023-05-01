@@ -34,4 +34,26 @@ public class BoardServiceImpl implements BoardService{
     public void register(Board vo) {
         boardMapper.insertSelectKey(vo);
     }
+
+    @Override
+    public Board get(int idx) {
+        Board vo = boardMapper.read(idx);
+
+        return vo;
+    }
+
+    @Override
+    public void modify(Board vo) {
+        boardMapper.update(vo);
+    }
+
+    @Override
+    public void remove(int idx) {
+        boardMapper.delete(idx);
+    }
+
+    @Override
+    public void replyProcess(Board vo) {
+        //1. 답글 만들기
+    }
 }

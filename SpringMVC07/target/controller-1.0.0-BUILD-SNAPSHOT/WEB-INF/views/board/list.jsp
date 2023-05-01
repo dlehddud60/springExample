@@ -86,7 +86,7 @@
       <c:forEach var="vo" items="${list}">
         <tr>
           <td>${vo.idx}</td>
-          <td>${vo.title}</td>
+          <td><a href="${cpath}/board/get?idx=${vo.idx}">${vo.title}</a></td>
           <td>${vo.writer}</td>
           <td><fmt:formatDate value="${vo.indate}" pattern="yyyy-MM-dd"/></td>
           <td>${vo.count}</td>
